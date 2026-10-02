@@ -6,6 +6,39 @@ Gain more practical experience by using this repository that contains a Python W
 
 [![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot)
 
+## Run the project
+
+Use Python 3.10 or newer. From the repository root, create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+```bash
+# Linux or macOS
+source .venv/bin/activate
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
+
+Install the dependencies and start the development server:
+
+```bash
+python -m pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
+
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) to be redirected to the API documentation, or go directly to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs). Stop the server with `Ctrl+C`.
+
+Run the tests from the repository root:
+
+```bash
+python -m pytest
+```
+
 ## Requirements
 
 1. Enable your [GitHub Copilot service](https://github.com/github-copilot/signup)
